@@ -8,6 +8,13 @@ XGBoost achieved the strongest predictive performance (highest ROC-AUC on the te
 
 ## How to Run the Code (3–6 Steps)
 
-Place the dataset files (retentiondata_case.csv and retention_final_dataset.csv) in the same directory as the notebook. Open Group#7.Churn_Modeling_Clean.ipynb in Jupyter Notebook or JupyterLab. Run all cells sequentially from top to bottom to perform data cleaning, feature engineering, and visualization. The notebook automatically splits the data into training, test, and holdout sets. Model pipelines with cross-validation and hyperparameter tuning will execute and select the best-performing model. Review final evaluation metrics, confusion matrix, ROC curve, and feature importance outputs for interpretation. One Limitation / Risk to Note
+1. Place the dataset files (retentiondata_case.csv and retention_final_dataset.csv) in the same directory as the notebook. 
+2. Open Group#7.Churn_Modeling_Clean.ipynb in Jupyter Notebook or JupyterLab.
+3. Run all cells sequentially from top to bottom to perform data cleaning, feature engineering, and visualization.
+4. The notebook automatically splits the data into training, test, and holdout sets.
+5. Model pipelines with cross-validation and hyperparameter tuning will execute and select the best-performing model.
+6. Review final evaluation metrics, confusion matrix, ROC curve, and feature importance outputs for interpretation. 
+
+## One Limitation / Risk to Note
 
 The model performance depends on historical data patterns, meaning it may not generalize well if customer behavior changes (e.g., pricing updates, new competitors, policy shifts). Additionally, optimizing for higher recall (to catch more churners) may increase false positives, potentially leading to unnecessary retention costs.
